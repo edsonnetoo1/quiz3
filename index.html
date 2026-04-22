@@ -160,7 +160,7 @@ Em menos de 3 minutos, você vai descobrir:<br>
             <div class="bar-row"><span class="bar-label">Dívidas quitadas</span><div class="bar-track"><div class="bar-fill" data-w="79"><span>79%</span></div></div></div>
         </div>
     </div>
-    
+    <button class="btn-continue mt16" onclick="goTo(11)">Continuar →</button>
 </div>
 
 <!-- ═══════════ ETAPA 11 ═══════════ -->
@@ -598,7 +598,6 @@ function animateBars() {
         bar.style.width = '0%';
         requestAnimationFrame(() => { setTimeout(() => { bar.style.width = w + '%'; }, 50); });
     });
-    setTimeout(() => { goTo(11); }, 2800);
 }
 
 // ── GAUGE (etapa 13) ──
